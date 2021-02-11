@@ -1,0 +1,67 @@
+html,
+main {
+  background: url("https://www.quotemaster.org/images/91/919f16b84668c9380af5e6d59c90a0ce.jpeg")
+    no-repeat center center fixed;
+}
+
+main {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "User Shared";
+}
+
+.User {
+  grid-area: User;
+  width: 475px;
+}
+
+.Shared {
+  grid-area: Shared;
+}
+
+.sharedContents {
+  position: relative;
+  /* float: right; */
+  /* padding-right: 100px; */
+  left: 400px;
+  width: 500px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Friends"
+    "Chat";
+}
+
+.Friends {
+  grid-area: Friends;
+  border-width: 10px;
+  border: black;
+  height: 500px;
+}
+
+.Chat {
+  position: relative;
+  grid-area: Chat;
+  bottom: auto;
+  left: 400px;
+}
